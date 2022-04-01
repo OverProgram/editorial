@@ -1,11 +1,11 @@
 use crate::style::Style;
 use crate::utils::{AABB};
 
-struct Command {
+pub struct Command {
     command_type: CommandType,
     style: Style,
 }
 
-enum CommandType {
+pub enum CommandType {
     Square(AABB)
 }
